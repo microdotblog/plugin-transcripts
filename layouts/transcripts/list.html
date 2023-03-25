@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "transcript") }}
+	{{ $list := $paginator.Pages }}
+	{{ range $list }}
+		<article class="h-entry">
+			<p><a href="{{ .Permalink }}">{{ .Title }}</a><br>
+				<span class="dt-published">{{ .Date.Format "January 2, 2006" }}</span>
+			</p>
+		</article>
+	{{ end }}
+
+{{ end }}

@@ -1,0 +1,12 @@
+{
+	"version": "1.0",
+	"title": "Transcripts",
+	"description": "This plug-in for Micro.blog adds a podcast transcripts index page and option to disable transcription.",
+	"fields": [
+		{
+			"field": "params.transcripts.enable",
+			"label": "Enable audio transcription",
+			"type": "boolean"
+		}
+	]
+}
