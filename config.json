@@ -1,5 +1,6 @@
 {
 	"params": {
-		"params.transcripts.enable": true
+		"transcripts_enable": true,
+		"transcripts_audio_link": true
 	}
 }
